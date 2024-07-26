@@ -4,7 +4,7 @@ import { FaCartPlus } from 'react-icons/fa6'
 import { Link, useLocation } from 'react-router-dom'
 import { logo } from '../assets/images/images'
 
-const Nav = () => {
+const Nav = ({length}) => {
     const location = useLocation();
     const isProductsPage = location.pathname === '/products';
 
@@ -27,7 +27,7 @@ const Nav = () => {
                         <div>
                             <Link to="/cart" className='flex items-center gap-2'>
                                 <FaCartPlus />
-                                <span>Cart {0}</span>
+                                <span>Cart {length}</span>
                             </Link>
                         </div>
                     </Button>
