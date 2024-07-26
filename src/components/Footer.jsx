@@ -6,7 +6,7 @@ const FooterEnd = () => {
     return (
         <>
             <Footer container className='bg-gray-900'>
-                <Footer.Copyright href="#" by="jasurhaydarovcode" year={2024} />
+                <Footer.Copyright href="https://github.com/jasurhaydarovcode" by="jasurhaydarovcode" year={2024} />
                 <Footer.LinkGroup>
                     <Footer.Link href="#">About</Footer.Link>
                     <Footer.Link href="#"><Link to={"/products"}>Products</Link></Footer.Link>
